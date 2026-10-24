@@ -490,7 +490,7 @@
         background: linear-gradient(
           105deg,
           transparent 38%,
-          rgba(255, 255, 255, 0.8) 50%,
+          rgba(255, 255, 255, 0.8) 50%, 
           transparent 62%
         );
         background-size: 260% 100%;
@@ -566,7 +566,7 @@
         letter-spacing: -0.015em;
         color: #1a1230;
       }
-      .card h3::after {
+      /* .card h3::after {
         content: "";
         display: block;
         width: 26px;
@@ -575,7 +575,7 @@
         border-radius: 2px;
         background: linear-gradient(90deg, #6d3df0, #a78bfa);
         transition: width 0.45s cubic-bezier(0.22, 1, 0.36, 1);
-      }
+      } */
       .card:hover h3::after {
         width: 64px;
       }
@@ -661,6 +661,13 @@
         box-shadow: 0 16px 30px -8px rgba(124, 77, 255, 0.75);
         transform: translateZ(36px);
         animation: obob 5s ease-in-out infinite;
+      }
+      .av img {
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        object-fit: cover;
+        display: block;
       }
       /* testimonials */
       .stats {
@@ -2511,6 +2518,13 @@
       .crew {
         margin-top: 30px;
       }
+      @media (min-width: 761px) {
+        .crew .pro:last-child {
+          grid-column: 1 / -1;
+          justify-self: center;
+          width: min(100%, 489px);
+        }
+      }
       .pro::before {
         content: "";
         position: absolute;
@@ -2600,6 +2614,9 @@
       }
       .crew.rv.in .pro:nth-child(2) {
         transition-delay: 0s, 0s, 0s, 0.45s, 0.45s, 0.45s;
+      }
+      .crew.rv.in .pro:nth-child(3) {
+        transition-delay: 0s, 0s, 0s, 0.7s, 0.7s, 0.7s;
       }
 
       @media (max-width: 760px) {
@@ -3457,7 +3474,7 @@
             ><span>years of experience</span>
           </div>
           <div class="ab-stat">
-            <b><span data-count="100">100</span>+</b><span>clients served</span>
+            <b><span data-count="50">50</span>+</b><span>clients served</span>
           </div>
           <div class="ab-stat">
             <b><span data-count="5">5</span></b
@@ -3507,9 +3524,16 @@
             <div class="o3d" aria-hidden="true">
               <div class="cb"><b></b><b></b><b></b><b></b><b></b><b></b></div>
             </div>
-            <div class="pt"><div class="av" aria-hidden="true">Y</div></div>
+            <div class="pt">
+              <div class="av">
+                <img
+                  src="https://res.cloudinary.com/sy4k6krf/image/upload/v1792865898/9952b7ac-1fab-4141-bfa2-1f959a0eeb52.png"
+                  alt=""
+                />
+              </div>
+            </div>
             <h3>Yash</h3>
-            <p class="rl">Senior Graphic Designer &amp; Marketing Head</p>
+            <p class="rl">Senior Graphic Designer &amp; Marketing Head (Founder)</p>
             <ul>
               <li>Graphic design</li>
               <li>Branding</li>
@@ -3518,8 +3542,33 @@
           </article>
           <article class="pro" data-tilt>
             <div class="o3d" aria-hidden="true"><div class="ob"></div></div>
-            <div class="pt"><div class="av" aria-hidden="true">P</div></div>
-            <h3>Prem Kumar</h3>
+            <div class="pt">
+              <div class="av">
+                <img
+                  src="https://res.cloudinary.com/sy4k6krf/image/upload/v1792865898/3b49b573-6632-48c2-9c00-82f1b21789cd.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <h3>Prem </h3>
+            <p class="rl">Head of Motion Design &amp; Video Editing</p>
+            <ul>
+              <li>Motion design</li>
+              <li>Video editing</li>
+              <li>Reels &amp; ads</li>
+            </ul>
+          </article>
+          <article class="pro" data-tilt>
+            <div class="o3d" aria-hidden="true"><div class="ob"></div></div>
+            <div class="pt">
+              <div class="av">
+                <!-- <img
+                  src="https://res.cloudinary.com/sy4k6krf/image/upload/v1792865898/3b49b573-6632-48c2-9c00-82f1b21789cd.png"
+                  alt=""
+                /> -->
+              </div>
+            </div>
+            <h3>Himank </h3>
             <p class="rl">Head of Motion Design &amp; Video Editing</p>
             <ul>
               <li>Motion design</li>
@@ -3533,16 +3582,16 @@
       <section class="sec" id="testimonials">
         <span class="pill"><i></i>Testimonials</span>
         <h2>
-          100+ clients satisfied.
+          50+ clients satisfied.
           <span class="dim">Outreach that gets replies.</span>
         </h2>
         <p class="sub">
-          We have worked with over 100 clients, and our outreach method is the
+          We have worked with over 50 clients, and our outreach method is the
           best going right now. Here is a real reply to one of our pitches.
         </p>
         <div class="stats">
           <div class="stat">
-            <b><span data-to="100">100</span>+</b><span>clients satisfied</span>
+            <b><span data-to="50">50</span>+</b><span>clients satisfied</span>
           </div>
           <div class="stat"><b>3+</b><span>years of experience</span></div>
         </div>
@@ -3601,8 +3650,12 @@
               <path d="M8 3v4M16 3v4M3 10h18" /></svg
             >Book meeting</a
           >
-          <a class="btn p" href="mailto:formqraftstudio@gmail.com"
-            ><i></i>formqraftstudio@gmail.com</a
+          <a
+            class="btn p"
+            href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=info%40formqraft.online"
+            
+            rel="noopener noreferrer"
+            ><i></i>info@formqraft.online</a
           >
           <a
             class="btn wa"
@@ -3646,7 +3699,7 @@
               <circle cx="17.5" cy="6.5" r=".6" fill="currentColor" /></svg
             >Instagram</a
           >
-          <a
+          <!-- <a
             href="https://www.linkedin.com/in/formqraft-studio-988669443"
             target="_blank"
             rel="noopener noreferrer"
@@ -3664,7 +3717,7 @@
                 d="M8 11v5M8 8v.01M12 16v-5M12 13c0-1.5 1-2 2-2s2 .8 2 2.2V16"
               /></svg
             >LinkedIn</a
-          >
+          > -->
           <a
             href="https://x.com/formqraftstud"
             target="_blank"
