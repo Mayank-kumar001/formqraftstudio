@@ -692,6 +692,13 @@
           Georgia,
           serif;
         letter-spacing: -0.02em;
+        white-space: nowrap;
+      }
+      .stat b > span {
+        display: inline;
+        margin: 0;
+        color: inherit;
+        font-size: inherit;
       }
       .stat span {
         display: block;
@@ -2518,13 +2525,6 @@
       .crew {
         margin-top: 30px;
       }
-      @media (min-width: 761px) {
-        .crew .pro:last-child {
-          grid-column: 1 / -1;
-          justify-self: center;
-          width: min(100%, 489px);
-        }
-      }
       .pro::before {
         content: "";
         position: absolute;
@@ -3470,7 +3470,7 @@
         </p>
         <div class="ab-stats">
           <div class="ab-stat">
-            <b><span data-count="3">3</span>+</b
+            <b><span data-count="2">2</span>+</b
             ><span>years of experience</span>
           </div>
           <div class="ab-stat">
@@ -3558,24 +3558,7 @@
               <li>Reels &amp; ads</li>
             </ul>
           </article>
-          <article class="pro" data-tilt>
-            <div class="o3d" aria-hidden="true"><div class="ob"></div></div>
-            <div class="pt">
-              <div class="av">
-                <!-- <img
-                  src="https://res.cloudinary.com/sy4k6krf/image/upload/v1792865898/3b49b573-6632-48c2-9c00-82f1b21789cd.png"
-                  alt=""
-                /> -->
-              </div>
-            </div>
-            <h3>Himank </h3>
-            <p class="rl">Head of Motion Design &amp; Video Editing</p>
-            <ul>
-              <li>Motion design</li>
-              <li>Video editing</li>
-              <li>Reels &amp; ads</li>
-            </ul>
-          </article>
+          
         </div>
       </section>
 
@@ -3585,15 +3568,14 @@
           50+ clients satisfied.
           <span class="dim">Outreach that gets replies.</span>
         </h2>
-        <p class="sub">
-          We have worked with over 50 clients, and our outreach method is the
-          best going right now. Here is a real reply to one of our pitches.
+        <p class="sub px-4">
+          We have worked with over 50 clients. Here is a real reply to one of our pitches.
         </p>
         <div class="stats">
-          <div class="stat">
+          <div class="stat flex">
             <b><span data-to="50">50</span>+</b><span>clients satisfied</span>
           </div>
-          <div class="stat"><b>3+</b><span>years of experience</span></div>
+          <div class="stat"><b>2+</b><span>years of experience</span></div>
         </div>
         <figure class="proof" style="margin-inline: auto">
           <div>
